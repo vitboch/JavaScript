@@ -67,9 +67,8 @@ const person2 = {
 
 bind(person1, logPerson)
 bind(person2, logPerson)
-
-
  */
+
 function logPerson() {
     console.log(`Person: ${this.name}, ${this.age}, ${this.job}`)
 }
@@ -94,4 +93,3 @@ function bind(context, fn) {
 
 bind(person1, logPerson)() //Person: Mike, 40, Web-developer
 bind(person2, logPerson)() //Person: Helen, 35, SMM
-
