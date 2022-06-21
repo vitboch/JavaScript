@@ -136,7 +136,7 @@ console.log(mike) //{ name: 'Mike', age: 41, budget: 250000 }
 const nikitaIndex = people.findIndex(person => person.name === 'Nikita')
 console.log(nikitaIndex) //2
 
-//chain = each method on a new line
+// chain = each method on a new line
 const newPeople = people
     .filter(person => person.budget > 3000)
     .map(person => {
@@ -153,4 +153,4 @@ console.log(newPeople) /*
                           { info: 'Nikita (25)', budget: 120000 },
                           { info: 'Georgy (50)', budget: 35000 }
                         ]
-*/
+                       */
