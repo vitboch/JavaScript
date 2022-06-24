@@ -21,7 +21,7 @@ function sendRequestFetch(method, url, body = null) {
         }
 
         return response.json().then(error => {
-            const e = new Error('Что-то пошло не так')
+            const e = new Error('Something went wrong')
             e.data = error
             throw e
         })
